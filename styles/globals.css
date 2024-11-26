@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #171717;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maxWidth {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* BACKGROUNDS */
+.bgMain {
+  background-image: url('../public/mainbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 0px);
+}
+
+.background_h1 {
+  background-image: url('../public/background_h1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background_h2 {
+  background-image: url('../public/fabrica.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background_beers {
+  background-image: url('../public/background_beers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background_pub {
+  background-image: url('../public/background_pub.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background_pub_2 {
+  background-image: url('../public/bg_history.png');
+  background-position: center;
+}
+
+.background_awards {
+  background-image: url('../public/background_awards.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bannerPub {
+  background-image: url('../public/banner_Pub.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+/*GRADIENTS */
+.gold-gradient {
+  background: linear-gradient(180deg, #d4af37, #f8e29d, #d4af37);
+}
+
+.silver-gradient {
+  background: linear-gradient(180deg, #c0c0c0, #e0e0e0, #c0c0c0);
+}
+
+summary {
+  list-style: none; /* Remove a seta */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Remove a seta em navegadores baseados em WebKit, como Chrome e Safari */
+}
